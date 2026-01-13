@@ -4,90 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Вулиці Одеси 2006-2015</title>
+  <title>Вулиці Одеси 1995-2015</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 7px;
-    }
-
-    th,
-    td {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-    h1,
-    h2,
-    h3 {
-      text-align: center;
-      color: #1a1c19;
-      font-family: "IBM Plex Serif", serif;
-      font-weight: 700;
-      font-style: normal;
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-
-    .year {
-      text-align: center;
-      color: #1a1c19;
-      font-family: "IBM Plex Serif", serif;
-      font-weight: 650;
-      font-style: normal;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-size: 22px;
-    }
-
-    .year:hover {
-      color: #ff0d00;
-      transition: 0.2s;
-    }
-
-    a {
-      color: #1a1c19;
-    }
-
-    tr:hover {
-      background-color: #ffe7ba;
-      transition: 0.25s;
-    }
-
-    .descision {
-      background: yellow;
-    }
-
-    .plan {
-      background: orange;
-    }
-
-    .links {
-      display: flex;
-      gap: 50px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .active {
-      color: #ff8400;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>ВУЛИЦІ</title>
 </head>
 
@@ -107,12 +30,29 @@
 
   <h2>АРХІВ ПЕРЕЙМЕНУВАНЬ</h2>
   <div class="links">
-    <a class="year active">2006-2015</a>
-    <a href="/streets/old16.html" class="year">2016-2021</a>
-    <a href="/streets/index.html" class="year">2022-2026</a>
+    <a class="year active">1995-2015</a>
+    <a href="/old16.html" class="year">2016-2021</a>
+    <a href="/index.html" class="year">2022-2026</a>
   </div>
 
-  <table>
+  <!-- From Uiverse.io by AbanoubMagdy1 -->
+  <div class="wave-group">
+    <input required="" type="text" class="input" id="search">
+    <span class="bar"></span>
+    <label class="label">
+      <span class="label-char" style="--index: 0">Ш</span>
+      <span class="label-char" style="--index: 1">у</span>
+      <span class="label-char" style="--index: 2">к</span>
+      <span class="label-char" style="--index: 3">а</span>
+      <span class="label-char" style="--index: 4">т</span>
+      <span class="label-char" style="--index: 5">и</span>
+      <span class="label-char" style="--index: 6">.</span>
+      <span class="label-char" style="--index: 7">.</span>
+      <span class="label-char" style="--index: 8">.</span>
+    </label>
+  </div>
+
+  <table id="table">
     <thead>
       <tr>
         <th>Стара назва</th>
@@ -121,8 +61,395 @@
       </tr>
     </thead>
     <tbody>
+      <tr class="market">
+        <td class="descision"><a href="https://omr.gov.ua/ua/acts/committee/90139/"><b>Розпорядження виконавчого
+              комітету
+              міської ради № 388
+              від 15.05.1995</b></a></td>
+      </tr>
       <tr>
-        <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/955/"><b>Рішення міської ради № 5267- IV
+        <td>проспект Ленінської "Іскри"</td>
+        <td><i>проспект Маршала Жукова</i></td>
+        <td><b>просект Небесної Сотні</b></td>
+      </tr>
+      <tr class="market">
+        <td class="descision"><a href="https://omr.gov.ua/ua/acts/committee/90139/"><b>Розпорядження виконавчого
+              комітету
+              міської ради № 400
+              від 18.05.1995</b></a></td>
+      </tr>
+      <tr>
+        <td>Островідова</td>
+        <td><b>Новосельського</b></td>
+      </tr>
+      <tr>
+        <td>Баранова</td>
+        <td><i>Князівська</i></td>
+        <td><b>Олексія Маркевича</b></td>
+      </tr>
+      <tr>
+        <td>Перекопської Перемоги</td>
+        <td><i>Градоначальницька</i></td>
+        <td><b>Тараса Кузьміна</b></td>
+      </tr>
+      <tr>
+        <td>Шолом Алейхема</td>
+        <td><b>М’ясоєдовська</b></td>
+      </tr>
+      <tr>
+        <td>Чіжикова</td>
+        <td><b>Пантелеймонівська</b></td>
+      </tr>
+      <tr>
+        <td>Мізікевича</td>
+        <td><b>Степова</b></td>
+      </tr>
+      <tr>
+        <td>Іванова</td>
+        <td><b>Дальницька</b></td>
+      </tr>
+      <tr>
+        <td>Подбельського</td>
+        <td><i>Коблевська</i></td>
+        <td><b>Павла Зеленого</b></td>
+      </tr>
+      <tr>
+        <td>бульвар Дзержинського</td>
+        <td><i>Лідерсовський бульвар</i></td>
+        <td><b>бульвар Гетьмана Сагайдачного</b></td>
+      </tr>
+      <tr>
+        <td>провулок Тельмана</td>
+        <td><b>провулок Удільний</b></td>
+      </tr>
+      <tr class="market">
+        <td class="descision"><a href="https://omr.gov.ua/ua/acts/committee/90139/"><b>Рішення виконавчого комітету
+              міської ради № 204
+              від 02.06.1995</b></a></td>
+      </tr>
+      <tr>
+        <td>1905-го року</td>
+        <td><b>Тираспольська</b></td>
+      </tr>
+      <tr>
+        <td>Суворова</td>
+        <td><b>Приморська</b></td>
+      </tr>
+      <tr>
+        <td>Фрунзе</td>
+        <td><b>Балківська</b></td>
+      </tr>
+      <tr>
+        <td>Академіка Павлова</td>
+        <td><b>Ольгіївська</b></td>
+      </tr>
+      <tr>
+        <td>Осипенка</td>
+        <td><i>Середня</i></td>
+        <td><b>Олександра Свіща</b></td>
+      </tr>
+      <tr>
+        <td>Нагорна</td>
+        <td><b>Дюківська</b></td>
+      </tr>
+      <tr>
+        <td>Перекопської Дивізії</td>
+        <td><b>Фонтанська дорога</b></td>
+      </tr>
+      <tr>
+        <td>Лазо</td>
+        <td><b>Колонічна</b></td>
+      </tr>
+      <tr>
+        <td>Крупської</td>
+        <td><i>Маріїнська</i></td>
+        <td><b>Михайла Омеляновича-Павленка</b></td>
+      </tr>
+      <tr>
+        <td>Іноземної колегії</td>
+        <td><b>Гімназична</b></td>
+      </tr>
+      <tr>
+        <td>Хворостіна</td>
+        <td><b>Прохоровська</b></td>
+      </tr>
+      <tr>
+        <td>Челюскинців</td>
+        <td><i>Кузнечна</i></td>
+        <td><b>Ковальська</b></td>
+      </tr>
+      <tr>
+        <td>Станіславського</td>
+        <td><b>Розкидайлівська</b></td>
+      </tr>
+      <tr>
+        <td>Ударників</td>
+        <td><i>Строганова</i></td>
+        <td><b>Максима Чайки</b></td>
+      </tr>
+      <tr>
+        <td>Марини Раскової</td>
+        <td><b>Картамишевська</b></td>
+      </tr>
+      <tr>
+        <td>Калініна</td>
+        <td><b>Головківська</b></td>
+      </tr>
+      <tr>
+        <td>Карпинського</td>
+        <td><b>Ямчитського</b></td>
+      </tr>
+      <tr>
+        <td>Загубанського</td>
+        <td><b>Комітетська</b></td>
+      </tr>
+      <tr>
+        <td>Діда Трофима</td>
+        <td><b>Церковна</b></td>
+      </tr>
+      <tr>
+        <td>Лідії Книпович</td>
+        <td><b>Ольгіївський узвіз</b></td>
+      </tr>
+      <tr>
+        <td>Комунальна</td>
+        <td><b>Скидановська</b></td>
+      </tr>
+      <tr>
+        <td>Амундсена</td>
+        <td><b>Дача Ковалевського</b></td>
+      </tr>
+      <tr>
+        <td>Вегера</td>
+        <td><i>Косвена</i></td>
+        <td><b>Скісна</b></td>
+      </tr>
+      <tr>
+        <td>Гамарніка</td>
+        <td><b>Семінарська</b></td>
+      </tr>
+      <tr>
+        <td>Менделєєва</td>
+        <td><i>Сабанеєв міст</i></td>
+        <td><b>Миколи Савича</b></td>
+      </tr>
+      <tr>
+        <td>Моріса Тореза</td>
+        <td><b>Рачкова</b></td>
+      </tr>
+      <tr>
+        <td>Севастопольська</td>
+        <td><b>Різовська</b></td>
+      </tr>
+      <tr>
+        <td>Чорноморська дорога</td>
+        <td><b>Люстдорфська дорога</b></td>
+      </tr>
+      <tr>
+        <td>Індустріальна</td>
+        <td><b>Михайлівська</b></td>
+      </tr>
+      <tr>
+        <td>Інструментальна</td>
+        <td><b>Бугаївська</b></td>
+      </tr>
+      <tr>
+        <td>Ленінського Батальону</td>
+        <td><i>Армійська</i></td>
+        <td><b>Незалежності</b></td>
+      </tr>
+      <tr>
+        <td>Горького</td>
+        <td><b>Спиридонівська</b></td>
+      </tr>
+      <tr>
+        <td>Петра Великого</td>
+        <td><i>Дворянська</i></td>
+        <td><b>Всеволода Змієнка</b></td>
+      </tr>
+      <tr>
+        <td>Короленка</td>
+        <td><b>Софіївська</b></td>
+      </tr>
+      <tr>
+        <td>Кооперативна</td>
+        <td><b>Лавкова</b></td>
+      </tr>
+      <tr>
+        <td>Московська</td>
+        <td><b>Чорноморського козацтва</b></td>
+      </tr>
+      <tr>
+        <td>спуск Комунальний</td>
+        <td><b>Скидановський узвіз</b></td>
+      </tr>
+      <tr>
+        <td>спуск Лізогуба</td>
+        <td><b>Карантинний узвіз</b></td>
+      </tr>
+      <tr>
+        <td>спуск Жанни Лябурб</td>
+        <td><b>Військовий узвіз</b></td>
+      </tr>
+      <tr>
+        <td>провулок Дмитра Ульянова</td>
+        <td><b>провулок Канатний</b></td>
+      </tr>
+      <tr>
+        <td>провулок Суворова</td>
+        <td><b>провулок Сабанський</b></td>
+      </tr>
+      <tr>
+        <td>провулок Хворостіна</td>
+        <td><b>провулок Прохоровський</b></td>
+      </tr>
+      <tr>
+        <td>провулок Пугачіський 1-ий</td>
+        <td><b>провулок Розумовський 1-ий</b></td>
+      </tr>
+      <tr>
+        <td>провулок Пугачіський 2-ий</td>
+        <td><b>провулок Розумовський 2-ий</b></td>
+      </tr>
+      <tr>
+        <td>провулок Кіровський</td>
+        <td><i>провулок Єлисаветградський</i></td>
+        <td><b>провулок Халайджогло</b></td>
+      </tr>
+      <tr>
+        <td>провулок Попова</td>
+        <td><b>провулок Каретний</b></td>
+      </tr>
+      <tr>
+        <td>провулок Павліка Ларишкіна</td>
+        <td><b>провулок Старокінний</b></td>
+      </tr>
+      <tr>
+        <td>провулок Лопатто</td>
+        <td><b>провулок Високий</b></td>
+      </tr>
+      <tr>
+        <td>провулок Безіменний</td>
+        <td><b>провулок Іподромний</b></td>
+      </tr>
+      <tr>
+        <td>провулок Пілотський</td>
+        <td><b>провулок Спаський</b></td>
+      </tr>
+      <tr>
+        <td>площа Вакуленчука</td>
+        <td><b>Митна площа</b></td>
+      </tr>
+      <tr>
+        <td>площа Потьомкинців</td>
+        <td><i>Катерининська площа</i></td>
+        <td><b>Європейська площа</b></td>
+      </tr>
+      <tr>
+        <td>площа Январського повстання</td>
+        <td><b>Олексіївська площа</b></td>
+      </tr>
+      <tr>
+        <td>площа Полярників</td>
+        <td><b>Михайлівська площа</b></td>
+      </tr>
+      <tr>
+        <td>сквер 9-го січня</td>
+        <td><b>Старосінна площа</b></td>
+      </tr>
+      <tr class="market">
+        <td class="descision"><a href="https://omr.gov.ua/ua/acts/committee/90139/"><b>Рішення виконавчого комітету
+              міської ради № 339
+              від 10.08.1995</b></a></td>
+      </tr>
+      <tr>
+        <td>Землячки</td>
+        <td><b>Іспанська</b></td>
+      </tr>
+      <tr>
+        <td>Гефта</td>
+        <td><b>Чорноморська</b></td>
+      </tr>
+      <tr>
+        <td>Мойсеєнка</td>
+        <td><b>Мельницька</b></td>
+      </tr>
+      <tr>
+        <td>дорога Котовського</td>
+        <td><b>Миколаївська дорога</b></td>
+      </tr>
+      <tr>
+        <td>Вакуленчука</td>
+        <td><b>Деволанівський узвіз</b></td>
+      </tr>
+      <tr>
+        <td>Войкова</td>
+        <td><b>Мацієвської</b></td>
+      </tr>
+      <tr>
+        <td>Академічна</td>
+        <td><b>Купріна</b></td>
+      </tr>
+      <tr>
+        <td>Менжинського</td>
+        <td><b>Стельмаха</b></td>
+      </tr>
+      <tr>
+        <td>Рози Люксембург</td>
+        <td><i>Буніна</i></td>
+        <td><b>Ніни Строкатої</b></td>
+      </tr>
+      <tr>
+        <td>Сельсоветська</td>
+        <td><b>Чубаївська</b></td>
+      </tr>
+      <tr>
+        <td>Комсомольського племені</td>
+        <td><b>Задніпровського</b></td>
+      </tr>
+      <tr>
+        <td>проспект Дімітрова</td>
+        <td><i>проспект Академіка Глушка</i></td>
+        <td><b>просект Князя Ярослава Мудрого</b></td>
+      </tr>
+      <tr>
+        <td>площа Конституції</td>
+        <td><i>площа Академічна</i></td>
+        <td><b>площа Незалежності</b></td>
+      </tr>
+      <tr>
+        <td>площа 50-річчя СРСР</td>
+        <td><i>площа Незалежності</i></td>
+        <td><b>площа Бориса Дерев’янка</b></td>
+      </tr>
+      <tr>
+        <td>провулок Сельсоветський</td>
+        <td><b>провулок Чубаївський</b></td>
+      </tr>
+      <tr>
+        <td>Комсомольський бульвар</td>
+        <td><i>бульвар Мистецтв</i></td>
+        <td><b>бульвар Військово-морських сил</b></td>
+      </tr>
+      <tr class="market">
+        <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/2002/"><b>Рішення міської ради № 4852-IV
+              від 09.11.2005</b></a></td>
+      </tr>
+      <tr>
+        <td>Ковалевського</td>
+        <td><b>Пішонівська</b></td>
+      </tr>
+      <tr class="market">
+        <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/2003/"><b>Рішення міської ради № 4857-IV
+              від 09.11.2005</b></a></td>
+      </tr>
+      <tr>
+        <td>Щепкіна</td>
+        <td><i>Єлісаветинська</i></td>
+        <td><b>Університетська</b></td>
+      </tr>
+      <tr class="market">
+        <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/955/"><b>Рішення міської ради № 5267-IV
               від 06.03.2006</b></a></td>
       </tr>
       <tr>
@@ -130,7 +457,7 @@
         <td><i>Сергія Варламова</i></td>
         <td><b>Академічна</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/2421/"><b>Рішення міської ради № 99-V
               від 27.06.2006</b></a></td>
       </tr>
@@ -184,7 +511,7 @@
         <td><i>провулок Новгородський 2-й</i></td>
         <td><b>провулок Теофіла Фраєрмана</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/3655/"><b>Рішення міської ради № 363-V
               від 29.09.2006</b></a></td>
       </tr>
@@ -238,7 +565,7 @@
         <td><b>Івана Вазова</b></td>
       </tr>
 
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/14220/"><b>Рішення міської ради № 2735-V
               від 16.04.2008</b></a></td>
       </tr>
@@ -262,7 +589,7 @@
         <td>Городня</td>
         <td><b>Чумацька</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/15475/"><b>Рішення міської ради № 2953-V
               від 10.07.2008</b></a></td>
       </tr>
@@ -270,7 +597,7 @@
         <td>Нова</td>
         <td><b>В’ячеслава Чорновола</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/18814/"><b>Рішення міської ради № 3815-V
               від 25.12.2008</b></a></td>
       </tr>
@@ -290,7 +617,7 @@
         <td>Хутірська (Київський район)</td>
         <td><b>Черешнева</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/20277/"><b>Рішення міської ради № 4086-V
               від 05.04.2009</b></a></td>
       </tr>
@@ -299,7 +626,7 @@
         <td><i>бульвар Михайла Жванецького</i></td>
         <td><b>бульвар Військово-морських сил</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/22108/"><b>Рішення міської ради № 4455-V
               від 07.07.2009</b></a></td>
       </tr>
@@ -307,7 +634,7 @@
         <td>провулок Марини Раскової</td>
         <td><b>провулок Картамишевський</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/25481/"><b>Рішення міської ради № 5336-V
               від 22.01.2010</b></a></td>
       </tr>
@@ -323,7 +650,7 @@
         <td>провулок Маячний (частина)</td>
         <td><b>провулок Монастирський</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://www.omr.gov.ua/ua/acts/council/31989/"><b>Рішення міської ради № 59-VI
               від 28.12.2010</b></a></td>
       </tr>
@@ -332,7 +659,7 @@
         <td><i>Піонерська</i></td>
         <td><b>Академічна</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/46847/"><b>Рішення міської ради № 2508-VI
               від 21.12.2012</b></a></td>
       </tr>
@@ -385,7 +712,7 @@
         <td>Куйбишева</td>
         <td><b>Старорізнична</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/47951/"><b>Рішення міської ради № 2856-VI
               від 19.02.2013</b></a></td>
       </tr>
@@ -407,7 +734,8 @@
     <a href="https://www.instagram.com/nickkhramov/" class="year">@nickkhramov</a>
   </div>
 
-</body>
+  <script src="/assets/js/search.js"></script>
 
+</body>
 
 </html>
