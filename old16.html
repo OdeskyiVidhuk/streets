@@ -10,84 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 7px;
-    }
-
-    th,
-    td {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-    h1,
-    h2,
-    h3 {
-      text-align: center;
-      color: #1a1c19;
-      font-family: "IBM Plex Serif", serif;
-      font-weight: 700;
-      font-style: normal;
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-
-    .year {
-      text-align: center;
-      color: #1a1c19;
-      font-family: "IBM Plex Serif", serif;
-      font-weight: 650;
-      font-style: normal;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-size: 22px;
-    }
-
-    .year:hover {
-      color: #ff0d00;
-      transition: 0.2s;
-    }
-
-    a {
-      color: #1a1c19;
-    }
-
-    tr:hover {
-      background-color: #ffe7ba;
-      transition: 0.25s;
-    }
-
-    .descision {
-      background: yellow;
-    }
-
-    .plan {
-      background: orange;
-    }
-
-    .links {
-      display: flex;
-      gap: 50px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .active {
-      color: #ff8400;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>ВУЛИЦІ</title>
 </head>
 
@@ -107,12 +30,29 @@
 
   <h2>АРХІВ ПЕРЕЙМЕНУВАНЬ</h2>
   <div class="links">
-    <a href="/streets/old.html" class="year">2006-2015</a>
+    <a href="/old.html" class="year">1995-2015</a>
     <a class="year active">2016-2021</a>
-    <a href="/streets/index.html" class="year">2022-2026</a>
+    <a href="/index.html" class="year">2022-2026</a>
   </div>
 
-  <table>
+  <!-- From Uiverse.io by AbanoubMagdy1 -->
+  <div class="wave-group">
+    <input required="" type="text" class="input" id="search">
+    <span class="bar"></span>
+    <label class="label">
+      <span class="label-char" style="--index: 0">Ш</span>
+      <span class="label-char" style="--index: 1">у</span>
+      <span class="label-char" style="--index: 2">к</span>
+      <span class="label-char" style="--index: 3">а</span>
+      <span class="label-char" style="--index: 4">т</span>
+      <span class="label-char" style="--index: 5">и</span>
+      <span class="label-char" style="--index: 6">.</span>
+      <span class="label-char" style="--index: 7">.</span>
+      <span class="label-char" style="--index: 8">.</span>
+    </label>
+  </div>
+
+  <table id="table">
     <thead>
       <tr>
         <th>Стара назва</th>
@@ -121,7 +61,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/82993/"><b>Рішення міської ради № 638-VII
               від 27.04.2016</b></a></td>
       </tr>
@@ -187,7 +127,7 @@
         <td>провулок Колгоспний</td>
         <td><b>провулок Різницький</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://ips.ligazakon.net/document/OD160220"><b>Розпорядження голови обласної
               державної адміністрації № 303/А-2016
               від 21.05.2016</b></a></td>
@@ -397,7 +337,7 @@
         <td>Ярослава Галана</td>
         <td><b>Романа Шухевича</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/110780/"><b>Рішення міської ради № 3658-VII
               від 19.09.2018</b></a></td>
       </tr>
@@ -405,7 +345,7 @@
         <td>Заславського</td>
         <td><b>Бориса Літвака</b></td>
       </tr>
-      <tr>
+      <tr class="market">
         <td class="descision"><a href="https://omr.gov.ua/ua/acts/council/187337/"><b>Рішення міської ради № 839-VIII
               від 08.12.2021</b></a></td>
       </tr>
@@ -423,7 +363,8 @@
     <a href="https://www.instagram.com/nickkhramov/" class="year">@nickkhramov</a>
   </div>
 
-</body>
+  <script src="/assets/js/search.js"></script>
 
+</body>
 
 </html>
